@@ -1,3 +1,6 @@
+# Reddit API client ID and client secret
+redditConfig.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
