@@ -1,0 +1,8 @@
+__pycache__
+test_notebooks/
+/build
+/dist
+*.egg-info
+.vscode/settings.json
+/site
+.DS_Store

@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-    name="aitextgen",
-    packages=["aitextgen"],  # this must be the same as the name above
+    name="active-aitextgen",
+    packages=["active-aitextgen"],  # this must be the same as the name above
     version="0.5.2",
     description="A robust Python tool for text-based AI training and generation using GPT-2.",
     long_description=open("README.md", "r", encoding="utf-8").read(),
