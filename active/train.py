@@ -49,7 +49,7 @@ class ATGTransformer(pl.LightningModule):
                 input_ids=None,
                 max_length=gen_length,
                 do_sample=True,
-                num_return_sequences=1,
+                num_return_sequences=10,
                 temperature=0.7,
                 pad_token_id=pad_token_id,
             )
