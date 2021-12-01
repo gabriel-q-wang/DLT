@@ -35,7 +35,7 @@ class ATGTransformer(pl.LightningModule):
         outputs = self({"input_ids": batch, "labels": batch})
         loss = outputs[0]
 
-        if batch_num % 2 == 0:
+        if batch_num % 1 == 0:
             gen_length_max = getattr(
                 self.model.config, "n_positions", None
             ) or getattr(self.model.config, "max_position_embeddings", None)
@@ -49,7 +49,7 @@ class ATGTransformer(pl.LightningModule):
                 input_ids=None,
                 max_length=gen_length,
                 do_sample=True,
-                num_return_sequences=5,
+                num_return_sequences=1,
                 temperature=0.7,
                 pad_token_id=pad_token_id,
             )
